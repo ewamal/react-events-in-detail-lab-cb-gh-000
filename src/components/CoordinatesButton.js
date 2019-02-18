@@ -6,7 +6,7 @@ export default class CoordinatesButton extends React.Component {
     const {onReceiveCoordinates} = this.props;
 
     return(
-      <button onClick={e.clientX}></button>
+      <button onClick={e => onReceiveCoordinates([e.clientX, e.clientY])}></button>
     )
   }
 }
